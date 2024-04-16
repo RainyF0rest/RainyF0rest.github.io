@@ -2,10 +2,10 @@
 <html lang="EN">
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Why do you like Capypara ?</title>
+        <title>Quick Quiz</title>
         <meta charset="utf-8">
     </head>
-    <body>
+    <body style="background-image: url('trentin-capybara-doodles.jpg');">
       <!--nav bar -->
       <div>
         <nav id='menu'>
@@ -20,18 +20,143 @@
                   <li><a href='http://'>Reproduction</a></li>
                 </ul>
               </li>
-              <li><a href='Form.html'>Survey</a></li>
+              <li><a href='Form.html'>Quiz</a></li>
               <li><a class='dropdown-arrow' href='http://'>Gallery</a>
                 <ul class='sub-menus'>
                   <li><a href='http://'>Photo</a></li>
                   <li><a href='http://'>Video</a></li>
                 </ul>
               </li>
-
             </ul>
           </nav>
       </div>    
-          <!--div -->
+          <!--div form and questions -->
+          <div class = "formQuiz" id = "demo">
+            <form name = "quiz" >
+              <legend> Quiz</legend>
+
+                <div class="formbuilder-radio-group form-group field-qWhere">
+                    <label for="qWhere" class="formbuilder-radio-group-label question">Where do wild capybara live?&nbsp;</label>
+                    <hr>
+                    <div class="radio-group">
+                        <div class="formbuilder-radio">
+                            <input name="qWhere" access="false" id="qWhere0" aria-required="true" value="option-1" type="radio">
+                            <label for="qWhere0">Asia</label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input name="qWhere" access="false" id="qWhere1" aria-required="true" value="option-2" type="radio">
+                            <label for="qWhere1">Central South America</label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input name="qWhere" access="false" id="qWhere2" aria-required="true" value="option-3" type="radio">
+                            <label for="qWhere2">Arctic</label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input name="qWhere" access="false" id="qWhere3" aria-required="true" type="radio">
+                            <label for="qWhere3">Africa</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formbuilder-radio-group form-group field-whyPopular">
+                    <label for="whyPopular" class="formbuilder-radio-group-label question">Why are capybara become popular ?&nbsp;</label>
+                    <hr>
+                    <div class="radio-group">
+                        <div class="formbuilder-radio">
+                            <input class="whyPopular" name="whyPopular" access="false" id="whyPopular-0" aria-required="true" value="youtubeAns" type="radio">
+                            <label for="whyPopular-0">A video on Youtube which the Japanese  put them in hot spring with tangerine. </label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input class="whyPopular" name="whyPopular" access="false" id="whyPopular-1" aria-required="true" value="memeAns" type="radio">
+                            <label for="whyPopular-1">A meme of capybara rob by a cat become hot on Reddit. </label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input class="whyPopular" name="whyPopular" access="false" id="whyPopular-2" aria-required="true" value="initialans" type="radio">
+                            <label for="whyPopular-2">They look adorable. They are popular since internet is popular. </label>
+                        </div>
+                        <div class="formbuilder-radio">
+                            <input class="whyPopular" name="whyPopular" access="false" id="whyPopular-3" aria-required="true" value="tikTokans" type="radio" >
+                            <label for="whyPopular-3">When a Russian artist's song, titled "Capybara," went viral on TikTok. </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formbuilder-select form-group field-qon">
+                    <label for="qon" class="formbuilder-select-label question">There are n capybara. All the capybara wanna swim in the hot spring. The hot spring can&nbsp;accommodate 1 capybara each time.&nbsp;
+                        <br>Later on the same day, m capybara went to the hot spring again. This time some human slave built another hotSpring for those capybaras. Which can accommodate 3 capybara each 
+                        time. What is the time complexity of letting all the capybara swim in the hot spring ?&nbsp;</label>
+                    <br><hr>
+                        <select class="qon" name="qon" id="qon" required="required" aria-required="true">
+                        <option value="option-2" id="qon1" name="qon1">O(k)</option>
+                        <option value="option-1" id="qon0" name="qon0">O(n)</option>
+                        <option value="option-3" id="qon2" name="qon2">O(capybara)</option>
+                        <option value="option-4" id="qon3" name="qon3">O(n log n)</option>
+                        <option value="option-5" id="qon4" name="qon4">O(n^2)</option>
+                        <option value="option-6" id="qon5" name="qon5">O(1)</option>
+                        <option value="option-7" id="qon6" name="qon6">O(log n)</option>
+                    </select>
+                </div>
+
+                <div class="formbuilder-checkbox-group form-group field-Qcharacters">
+                    <label for="Qcharacters" class="formbuilder-checkbox-group-label question">What are characters of most capybara?</label>
+                    <hr>
+                    <div class="checkbox-group">
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters0" access="false" id="Qcharacters-0" aria-required="true" value="Pathetic" type="checkbox">
+                            <label for="Qcharacters-0">Pathetic</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters1" access="false" id="Qcharacters-1" aria-required="true" value="Chill" type="checkbox">
+                            <label for="Qcharacters-1">Chill</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters2" access="false" id="Qcharacters-2" aria-required="true" value="Needy" type="checkbox">
+                            <label for="Qcharacters-2">Needy</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters3" access="false" id="Qcharacters-3" aria-required="true" value="Cunning" type="checkbox">
+                            <label for="Qcharacters-3">Cunning</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters4" access="false" id="Qcharacters-4" aria-required="true" value="Tolerance" type="checkbox">
+                            <label for="Qcharacters-4">Tolerance</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters5" access="false" id="Qcharacters-5" aria-required="true" value="Greedy " type="checkbox">
+                            <label for="Qcharacters-5">Greedy </label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters6" access="false" id="Qcharacters-6" aria-required="true" value="Grumpy" type="checkbox">
+                            <label for="Qcharacters-6">Grumpy</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters7" access="false" id="Qcharacters-7" aria-required="true" value="All " type="checkbox">
+                            <label for="Qcharacters-7">All of the above</label>
+                        </div>
+                        <div class="formbuilder-checkbox">
+                            <input class="Qcharacters" name="Qcharacters8" access="false" id="Qcharacters-8" aria-required="true" value="None " type="checkbox">
+                            <label for="Qcharacters-8">None of the above </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formbuilder-text form-group field-qSongAnsField">
+                    <label for="qSongAnsField" class="formbuilder-text-label question">Enter a word from the chorus part of the song within this website :&nbsp;</label>
+                    <hr>
+                    <input type="text" class="qSongAnsField" name="qSongAnsField" access="false" id="qSongAnsField">
+                </div>
+
+                <div class="formbuilder-text form-group field-nameField">
+                    <label for="nameField" class="formbuilder-text-label question">Enter your name :&nbsp;</label>
+                    <br><hr>
+                    <input type="text" class="nameField" name="nameField" access="false" id="nameField">
+                </div><p id = "test"></p>
+                <span class = "buttonSection">
+                  <button class = "confirmButton" onclick="print_result()">Confirm</button>
+                <button class = "ResetButton" onclick="reset()">&nbsp;&nbsp;Reset&nbsp;&nbsp;</button>
+              </span>
+            </form>
+          </div>
           
         <script src="index.js"></script>
     </body>
