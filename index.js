@@ -79,7 +79,7 @@ function updatemenu() {
       img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }
     document.getElementById("demo").innerHTML = "<div class = \"results\">" + quote 
-    + img + "<divclass = \"resultsIn\"> Marks : " + mark  + "/7</div> </div>";
+    + img + "<div class = \"resultsIn\"> Marks : " + mark  + "/7 </div></div>";
 	}
 
   function reset(){
