@@ -132,7 +132,7 @@ body{
   
   *::-webkit-scrollbar-thumb {
 	border-radius: 19px;
-	background-color: #E5A433;
+	background-color: #fcb02e;
   }
   
   *::-webkit-scrollbar-thumb:hover {
@@ -154,6 +154,29 @@ body{
 		text-align: center;
 		
 	}
+	/*Some buttons for song.html*/
+	.soundButton{
+		border-radius: 100px !important;
+		padding: 0 !important;
+		margin: 1%!important;
+		border: #362D24 3px inset !important;
+		background-color: #fcb02e;
+	}
+	.soundButton:hover{
+		background-color: #FABC2D;
+	}
+	.soundButton:active{
+		background-color: #EBAE36;
+	}
+	.soundImg{
+		max-width: 32px;
+		margin: 7px;
+	}
+	.unmuted{
+		max-width: 45px;
+		margin: 1%;
+	}
+
 	.confirmButton {
 	color: #362D24 !important;
 	text-shadow: 1px 1px 2px #FFF5C1;
@@ -240,6 +263,7 @@ body{
     border-radius: 20px;
     margin-top: 3%;
   }
+    /*Quiz Results*/
   .results{
 	display: block;
 	align-items: center;
@@ -253,3 +277,33 @@ body{
 	justify-content: center;
 	text-align: center;
   }
+
+/* Path: html/song.html */
+.songBlock{
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.background-video{
+	border-radius: 40px;
+	max-height: 750px;
+}
+
+/* Song lyrics */
+@keyframes jump {
+	0% { 
+		transform: translateY(0); 
+		color: #f876e7; 
+		text-shadow: 1px 1px 28px rgba(0,0,0,1);
+	}
+	50% { 
+		transform: translateY(-20px); 
+		color: #76daf8; 
+		text-shadow:  1px 1px 28px rgba(0,0,0,1);
+	}
+	100% { 
+		transform: translateY(0); 
+		color: #f8d576; 
+		text-shadow: 1px 1px 28px rgba(0,0,0,1);
+	}
+}

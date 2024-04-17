@@ -255,7 +255,7 @@ section .text-container .text-box h3{
 
 *::-webkit-scrollbar-thumb {
   border-radius: 19px;
-  background-color: #E5A433;
+  background-color: #fcb02e;
 }
 
 *::-webkit-scrollbar-thumb:hover {

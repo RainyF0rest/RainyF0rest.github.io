@@ -1,3 +1,28 @@
+function menuInEachPage() { //menu in each page
+    document.getElementById("menuDiv").innerHTML = "<nav id='menu'>\
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>\
+    <ul>\
+      <li id = 'navHome'><a href='index.html'>Home</a></li>\
+      <li id = 'navSong'><a href='song.html'>Song</a></li>\
+      <li><a class='dropdown-arrow' href='http://'>About</a>\
+        <ul class='sub-menus'>\
+          <li><a href='findThem.html'>FindThem</a></li>\
+          <li><a href='http://'>Diet</a></li>\
+          <li><a href='http://'>Reproduction</a></li>\
+        </ul>\
+      </li>\
+      <li><a href='Form.html'>Quiz</a></li>\
+      <li><a class='dropdown-arrow' href='http://'>Gallery</a>\
+        <ul class='sub-menus'>\
+          <li><a href='http://'>Photo</a></li>\
+          <li><a href='http://'>Video</a></li>\
+        </ul>\
+      </li>\
+    </ul>\
+  </nav>";}
+  menuInEachPage();
+
+  
 function updatemenu() {
     if (document.getElementById('responsive-menu').checked == true) {
       document.getElementById('menu').style.borderBottomRightRadius = '0';
@@ -7,8 +32,8 @@ function updatemenu() {
     }
   }
 
+  //quiz.html
   function print_result() {
-
     var mark = 0;
     var qSongAns = document.getElementById("qSongAnsField").value.toUpperCase();
     var selectElement = document.getElementById('qon');
@@ -99,8 +124,34 @@ function updatemenu() {
       }
     }
   }
-  
+ 
   window.addEventListener("scroll", reveal);
-
-
+//Song.html
+function unmute() {
+    var video = document.getElementById('background-video');
+    if (video.muted == true){
+        document.getElementById('unmute-button').innerHTML = '<img id ="soundImg" class = "unmuted" src = "sound-on.svg">';
+        video.muted = false;
+    }else{
+    document.getElementById('unmute-button').innerHTML = '<img id ="soundImg" class = "soundImg" src = "mute-audio.svg">';
+    video.muted = true;
+    }
+}
+var lyrics = [  //lyrics"CAP ! ", "PY ! ","BA ! ","RA ! ",
+  "CAPYBARA",
+  "CAPYBARA",
+  "CAPYBARA~",
+  "CAPYBARA",
+  "CAPYBARA",
+  "CAPYBARA~",
+  "CAPYBARA ",
   
+];
+
+var lyricsIndex = 0;
+
+setInterval(function() {
+  var lyricsDiv = document.getElementById('lyrics');
+  lyricsDiv.textContent = lyrics[lyricsIndex];
+  lyricsIndex = (lyricsIndex + 1) % lyrics.length;
+}, 250);  // Change lyrics every 500 milliseconds (0.5 seconds)

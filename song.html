@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>TheCapybaraSong</title>
+        <meta charset="utf-8">
+    </head>
+    <body style="background-image: url('trentin-capybara-doodles.jpg');">
+      <!--nav bar -->
+      <div id = 'menuDiv'></div>     
+          <!--div -->
+          <div class="songBlock">
+            <video id="background-video" class="background-video" autoplay loop muted poster="river.jpg">
+                <source src="TheCapybaraSong.mp4" type="video/mp4">
+            </video>              
+        </div>
+        <div id="lyrics" style="font-size:35px; font-weight: bold; position: fixed; bottom: 20px; width: 100%; text-align: center; animation: jump 1s infinite;">
+            CAP ! 
+        </div>
+
+        <button class = "soundButton" onclick = "unmute()" id="unmute-button" style="position: fixed; bottom: 20px; right: 20px;"><img id ="soundImg" class = "soundImg" src = "mute-audio.svg"></button>
+        <script src="index.js"></script>
+    </body>
+</html>
