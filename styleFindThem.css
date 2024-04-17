@@ -123,6 +123,48 @@ section .text-container .text-box h3{
   opacity: 1;
 }
 
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #EBDBBF;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FFEECF;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #F2E2C5;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 19px;
+  background-color: #fcb02e;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FABC2D;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #EBAE36;
+}
+
+.navIcon{
+	width: 40px;
+	margin: 2%;
+}
+.navIconLi{
+	justify-self: start;
+	top : 11px;
+	right: 35%;
+  justify-self: flex-start;
+}
+
+
 /* Menu css */
 #menu {
 	background: #362d24;
@@ -228,42 +270,3 @@ section .text-container .text-box h3{
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
 }
-
-/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #E5A433 #EBDBBF;
-}*/
-
-/* Chrome, Edge and Safari */
-*::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
-}
-*::-webkit-scrollbar-track {
-  border-radius: 5px;
-  background-color: #EBDBBF;
-}
-
-*::-webkit-scrollbar-track:hover {
-  background-color: #FFEECF;
-}
-
-*::-webkit-scrollbar-track:active {
-  background-color: #F2E2C5;
-}
-
-*::-webkit-scrollbar-thumb {
-  border-radius: 19px;
-  background-color: #fcb02e;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #FABC2D;
-}
-
-*::-webkit-scrollbar-thumb:active {
-  background-color: #EBAE36;
-}
-
-  
