@@ -54,32 +54,32 @@ function updatemenu() {
       mark++;
     }
     if (mark == 7){
-      quote = "Congratulations! " + name + ", You are the grand capybara master!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Congratulations! " + name + ", You are the grand capybara master!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 6){
-      quote = "Good job! " + name + ", You are an capybara expert! ";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Good job! " + name + ", You are an capybara expert! </div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 5){
-      quote = "Nice try! " + name + ", You should watch more Capybara video ! ";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Nice try! " + name + ", You should watch more Capybara video ! </div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 4){
-      quote = "Good effort! " + name + ", Keep it up! Follow the Capybara instagram!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Good effort! " + name + ", Keep it up! Follow the Capybara instagram!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 3){
-      quote = "Good effort! " + name + ", Keep it up! Follow the Capybara instagram!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Good effort! " + name + ", Keep it up! Follow the Capybara instagram!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 2){
-      quote = "Yikes! " + name + ", You really should go through the website one more time!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Yikes! " + name + ", You really should go through the website one more time!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 1){
-      quote = "Oh no! " + name + ", The capybara police is coming for you!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Oh no! " + name + ", The capybara police is coming for you!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }else if (mark == 0){
-      quote = "Oh no! " + name + ", The capybara police is going to arrest you due to your violate of capybara space security law!";
-      img = "<img src = \"ColumbusZoo.png\" class = \"square\">";
+      quote = "<div class = \"resultsIn\"> Oh no! " + name + ", The capybara police is going to arrest you due to your violate of capybara space security law!</div>";
+      img = "<divclass = \"resultsIn\"> <img src = \"ColumbusZoo.png\" class = \"square\"></div>";
     }
-    document.getElementById("demo").innerHTML = "<div class = \"results\"><div class = \"resultsIn\"> " + quote  + "</div>" + "<divclass = \"resultsIn\"> " 
-    + img + "</div>" + "<divclass = \"resultsIn\"> Marks : " + mark  + "/7</div>";
+    document.getElementById("demo").innerHTML = "<div class = \"results\">" + quote 
+    + img + "<divclass = \"resultsIn\"> Marks : " + mark  + "/7</div> </div>";
 	}
 
   function reset(){

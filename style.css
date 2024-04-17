@@ -240,3 +240,15 @@ body{
     border-radius: 15px;
     margin-top: 3%;
   }
+  .results{
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
+  resultsIn{
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
