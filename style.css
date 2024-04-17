@@ -237,7 +237,7 @@ body{
     min-width: 400px;
     object-fit:cover;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-top: 3%;
   }
   .results{
@@ -245,6 +245,7 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	font-size: 20px;
   }
   .resultsIn{
 	display: block;
